@@ -2,6 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://devanandverma01d.github.io/DEV_Metflix",
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
@@ -13,6 +14,7 @@
     "bcrypt": "^5.1.0",
     "bcryptjs": "^2.4.3",
     "firebase": "^9.19.1",
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-loader-spinner": "^5.3.4",
@@ -24,6 +26,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploye": "npm run build",
+    "deploye": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
